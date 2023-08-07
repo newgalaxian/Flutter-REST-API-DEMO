@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_api_demo/config/themes/AppTheme.dart';
+import 'package:flutter_api_demo/features/views/screens/main_page.dart';
 
 import 'features/views/screens/home.dart';
+import 'features/views/screens/todos.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +17,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter API Demo',
-      theme: AppTheme.basic,
-      home: const MyHome(),
+      theme: AppTheme.dark,
+      home: const MainPage(),
     );
   }
 }
